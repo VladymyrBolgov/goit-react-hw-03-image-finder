@@ -1,6 +1,6 @@
 import React, { Component } from "react";
 import PropTypes from 'prop-types';
-import {Overlay, ModalWondow, ModalImage} from './Modal.styled'
+import {Overlay, ModalWindow, ModalImage} from './Modal.styled'
 
 class Modal extends Component {
    static propTypes = {
@@ -31,9 +31,9 @@ class Modal extends Component {
       const { image, tags } = this.props;
       return (
          <Overlay onClick={this.handleBackdropClick}>
-            <ModalWondow>
+            <ModalWindow>
                <ModalImage src={image} alt={tags} />
-            </ModalWondow>
+            </ModalWindow>
          </Overlay>
       )
    }
