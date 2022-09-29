@@ -5,6 +5,8 @@ import {Overlay, ModalWindow, ModalImage} from './Modal.styled'
 class Modal extends Component {
    static propTypes = {
       onClose: PropTypes.func.isRequired,
+      image: PropTypes.func.isRequired,
+      tags: PropTypes.func.isRequired,
    };
 
    componentDidMount() {
@@ -39,9 +41,4 @@ class Modal extends Component {
    }
 }
 
-Modal.propTypes = {
-   image: PropTypes.func.isRequired,
-   tags: PropTypes.func.isRequired,
-};
- 
 export default Modal;
